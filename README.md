@@ -49,4 +49,13 @@ Eficiencia 4 hilos
 1,239466653/4 = 0,30987
 ->30,987%
 
+Analisis de los valores:
+De acuerdo a los tres valores del speed up en las ejecuciones en paralelo es viable ya que en cada ejecucion el speedup dio mayor a 1,
+la ejecucion en 4 hilos dio un mayor speedup pero no por mucho comparado con la ejecucion de 2 hilos, esto se debe a que se genera un
+cuello de botella en el procesamiento de las imagenes al repartir el recorrido de los pixeles entre los hilos y esperar que cada hilo
+termine su ejecucion para unir el resultado de la imagen.
+
+
+En cuanto a eficiencia se evidencia que hay una diferencia del 22,233% entre ambas ejecuciones paralelas, 
+lo que significa que la ejecucion de 2 hilos a pesar de tener un speedup inferior al de 4 hilos.
 
